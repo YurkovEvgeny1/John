@@ -1,0 +1,33 @@
+.text-block__inner {
+	display: flex;
+}
+
+.text-block__date {
+	display: flex;
+	font-size: 18px;
+	padding-right: 20px;
+	border-right: 1px solid #000;
+}
+
+.text-block__title{
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 35px;
+	@include breakpoint($mobile-bp){
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+}
+.text-block__inner{
+	margin-bottom: 30px;
+}
+
+.text-block__proffesion{
+	font-size: 18px;
+	padding-left: 20px;
+}
+
+.text-block__item-text{
+	font-size: 16px;
+	padding-right: 55px;
+}

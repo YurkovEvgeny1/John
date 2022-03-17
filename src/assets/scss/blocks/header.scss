@@ -1,0 +1,9 @@
+.header{
+	
+	width: 100%;
+	margin-bottom: 60px;
+	@include breakpoint($mobile-bp){
+		height: 0px;
+	}
+}
+

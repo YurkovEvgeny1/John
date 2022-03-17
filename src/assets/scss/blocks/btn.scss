@@ -1,0 +1,21 @@
+.btn {
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: $Primary;
+	color: $white;
+	border-radius: 5px;
+	border: none;
+	font-size: 20px;
+	margin-bottom: 50px;
+
+	transition: all 0.2s linear;
+
+	&:hover {
+		background-color: rgb(233, 118, 118);
+	}
+
+	&:active {
+		box-shadow: #000 2px 2px 2px;
+		transform: scale(2);
+	}
+}

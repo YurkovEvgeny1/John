@@ -1,0 +1,23 @@
+// colors
+
+$Primary: #FF6464;
+$Secondry:#00A8CC;
+$dark:#21243D;
+$white: #fff;
+$Light: #8695A4;
+$black:#000;
+
+// адаптация
+$tablet-bp: 768px;
+$mobile-bp: 575px;
+
+// mixin
+
+
+@mixin breakpoint($bp) {
+    
+	@media screen and (max-width: $bp) {
+		 @content;
+	}
+	
+}

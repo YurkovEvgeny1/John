@@ -1,0 +1,12 @@
+.blog__title{
+	font-weight: bold;
+	font-size: 44px;
+	color: $dark;
+	@include breakpoint($mobile-bp){
+		font-size: 30px;
+	}
+}
+
+.blog__title{
+	padding: 0px 20px;
+}

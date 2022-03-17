@@ -1,0 +1,52 @@
+.resume {
+	display: flex;
+	justify-content: space-between;
+	@include breakpoint($mobile-bp){
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+}
+
+.resume__title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 60px;
+}
+.resume__item-one{
+	@include breakpoint($mobile-bp){
+		order: 2;
+		text-align: center;
+	}
+}
+
+.resume__item-ty{
+	@include breakpoint($mobile-bp){
+		order: 1;
+		margin: 0 auto;
+	}
+}
+.resume__item img{
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+
+}
+
+.resume__text {
+	margin: 40px 125px 40px 0px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+	@include breakpoint($mobile-bp){
+		margin: 0 auto;
+		padding: 30px 20px;
+	}
+	@include breakpoint($tablet-bp){
+		font-size: 18px;
+		margin: 40px 0px;
+	}
+}

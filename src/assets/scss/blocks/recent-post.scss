@@ -1,0 +1,73 @@
+.section__post {
+	background-color: #edf7fa;
+	@include breakpoint($tablet-bp){
+		padding: 15px;
+	}
+	
+	
+}
+
+.recent-post__header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0px;
+	@include breakpoint($mobile-bp){
+		padding: 25px 0px 10px;
+	}
+}
+.recent-post__blocks {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	@include breakpoint($mobile-bp){
+		flex-wrap: wrap;
+	}
+}
+.recent-post__title {
+	font-size: 22px;
+	color: $black;
+	@include breakpoint($mobile-bp){
+		margin: 0 auto;
+		
+	}
+}
+
+.recent-post__links{
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.recent-post__links a {
+	font-size: 16px;
+	color: $Secondry;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.recent-post__item {
+	background-color: $white;
+	padding: 30px 20px;
+	
+	
+	border-bottom: 1px solid #E0E0E0;
+	&.left {
+		margin-right: 9px;
+		@include breakpoint($mobile-bp){
+			margin: 10px;
+			font-size: 16px;
+		}
+	}
+	&.right {
+		margin-left: 9px;
+		@include breakpoint($mobile-bp){
+			margin: 10px;
+			font-size: 16px;
+		}
+	}
+	@include breakpoint($tablet-bp){
+		padding: 30px 15px;
+	}
+	
+}
